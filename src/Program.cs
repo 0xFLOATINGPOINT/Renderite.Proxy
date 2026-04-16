@@ -12,13 +12,13 @@ internal class Program
         Console.WriteLine(string.Empty);
         Console.WriteLine($"QueueName: {QueueName}");
         Console.WriteLine($"QueueCapacity: {QueueCapacity}");
-        Process process = new Process();
-        process.StartInfo.UseShellExecute = false;
-        process.StartInfo.RedirectStandardInput = true;
-        process.StartInfo.FileName = "C:\\Windows\\System32\\clip.exe";
-        process.Start();
-        process.StandardInput.Write(QueueName);
-        process.StandardInput.Close();
+        //Process process = new Process();
+        //process.StartInfo.UseShellExecute = false;
+        //process.StartInfo.RedirectStandardInput = true;
+        //process.StartInfo.FileName = "C:\\Windows\\System32\\clip.exe";
+        //process.Start();
+        //process.StandardInput.Write(QueueName);
+        //process.StandardInput.Close();
         Console.WriteLine("Press any key to exit...");
         Console.ReadKey();
     }
